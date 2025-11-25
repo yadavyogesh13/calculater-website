@@ -1,0 +1,77 @@
+<!-- Technology Stack -->
+<div class="max-w-6xl mx-auto mb-20">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Technology</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Built with modern technologies for reliability and performance
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-js text-yellow-500 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">JavaScript</div>
+                        <div class="text-sm text-gray-600">Frontend Logic</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-laravel text-red-500 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">Laravel</div>
+                        <div class="text-sm text-gray-600">Backend Framework</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-vuejs text-green-500 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">Vue.js</div>
+                        <div class="text-sm text-gray-600">Frontend Framework</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-database text-blue-500 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">MySQL</div>
+                        <div class="text-sm text-gray-600">Database</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-aws text-orange-500 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">AWS</div>
+                        <div class="text-sm text-gray-600">Cloud Infrastructure</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-docker text-blue-400 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">Docker</div>
+                        <div class="text-sm text-gray-600">Containerization</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-yellow-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-git-alt text-orange-600 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">Git</div>
+                        <div class="text-sm text-gray-600">Version Control</div>
+                    </div>
+                    
+                    <div class="text-center p-4">
+                        <div class="w-16 h-16 bg-teal-50 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-server text-gray-600 text-2xl"></i>
+                        </div>
+                        <div class="font-semibold text-gray-800">Linux</div>
+                        <div class="text-sm text-gray-600">Server OS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
