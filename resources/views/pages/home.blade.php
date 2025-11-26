@@ -277,7 +277,7 @@
     }
     </style>
 
-    <script src="{{ asset('calculatorBoard.js') }}"></script>
+    <script src="{{ asset('js/calculatorBoard.js') }}"></script>
 
     <!-- Calculators Section -->
     <section id="calculators" class="py-16 bg-gray-50">
