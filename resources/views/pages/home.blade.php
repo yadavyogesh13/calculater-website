@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Yogesh - All-in-One Calculator Tools')
+@section('title', 'CalculaterTools - All-in-One Calculator Tools')
 
 @section('content')
     <!-- Enhanced Hero Section with Keyboard-Enabled Calculator -->
