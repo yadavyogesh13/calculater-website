@@ -9,7 +9,9 @@ function updateDisplay() {
     
     // Show/hide keyboard focus indicator
     const focusIndicator = document.getElementById('keyboard-focus');
-    focusIndicator.style.opacity = isKeyboardActive ? '1' : '0';
+    if (focusIndicator) {
+        focusIndicator.style.opacity = isKeyboardActive ? '1' : '0';
+    }
 }
 
 function appendToCalc(value) {
@@ -191,11 +193,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Focus management for better UX
     const calculatorContainer = document.querySelector('.bg-white\\/10');
-    calculatorContainer.addEventListener('click', function() {
-        this.focus();
-    });
-    
-    calculatorContainer.setAttribute('tabindex', '0');
+    if (calculatorContainer) {
+        calculatorContainer.addEventListener('click', function() {
+            this.focus();
+        });
+        
+        calculatorContainer.setAttribute('tabindex', '0');
+    }
 });
 
 // Handle window focus/blur for keyboard indicator

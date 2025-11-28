@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Enhanced Hero Section with Keyboard-Enabled Calculator -->
-    <section class="gradient-bg text-white py-20 relative overflow-hidden">
+    <section class="gradient-bg text-white py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden">
         <!-- Animated Background Elements -->
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute -top-40 -right-32 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
@@ -13,18 +13,19 @@
         </div>
         
         <!-- Floating Calculator Icons -->
-        <div class="absolute top-10 left-10 opacity-20 animate-float">
-            <i class="fas fa-calculator text-4xl"></i>
+        <div class="absolute top-10 left-5 sm:left-10 opacity-20 animate-float hidden sm:block">
+            <i class="fas fa-calculator text-3xl sm:text-4xl"></i>
         </div>
-        <div class="absolute top-20 right-20 opacity-15 animate-float-delayed">
-            <i class="fas fa-chart-pie text-3xl"></i>
+        <div class="absolute top-20 right-5 sm:right-20 opacity-15 animate-float-delayed hidden sm:block">
+            <i class="fas fa-chart-pie text-2xl sm:text-3xl"></i>
         </div>
-        <div class="absolute bottom-20 left-20 opacity-10 animate-float-slow">
-            <i class="fas fa-percentage text-5xl"></i>
+        <div class="absolute bottom-20 left-5 sm:left-20 opacity-10 animate-float-slow hidden sm:block">
+            <i class="fas fa-percentage text-3xl sm:text-5xl"></i>
         </div>
         
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div class="w-full px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 md:gap-10 lg:gap-12">
                 <!-- Left Content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
                     <!-- Badge -->
@@ -33,37 +34,37 @@
                         <span class="text-sm font-medium">Trusted by 10,000+ users worldwide</span>
                     </div>
                     
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
                         All Your Calculator Needs
-                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-300">
+                        <span class="block text-transparent bg-clip-text bg-linear-to-r from-yellow-300 to-orange-300">
                             In One Place
                         </span>
                     </h1>
                     
-                    <p class="text-xl md:text-2xl mb-8 leading-relaxed">
+                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 leading-relaxed">
                         From <span class="font-semibold text-yellow-300">financial planning</span> to <span class="font-semibold text-green-300">health tracking</span>, 
                         <span class="font-semibold text-blue-300">business calculations</span> to <span class="font-semibold text-purple-300">tech tools</span> - 
                         we've got every calculator you'll ever need.
                     </p>
                     
                     <!-- Stats -->
-                    <div class="flex flex-wrap gap-8 mb-8">
+                    <div class="flex flex-wrap gap-6 sm:gap-8 mb-6 sm:mb-8">
                         <div class="text-center lg:text-left">
-                            <div class="text-3xl font-bold text-yellow-300">50+</div>
-                            <div class="text-white/80">Calculators</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-yellow-300">50+</div>
+                            <div class="text-white/80 text-sm sm:text-base">Calculators</div>
                         </div>
                         <div class="text-center lg:text-left">
-                            <div class="text-3xl font-bold text-green-300">10K+</div>
-                            <div class="text-white/80">Active Users</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-green-300">10K+</div>
+                            <div class="text-white/80 text-sm sm:text-base">Active Users</div>
                         </div>
                         <div class="text-center lg:text-left">
-                            <div class="text-3xl font-bold text-blue-300">99.9%</div>
-                            <div class="text-white/80">Uptime</div>
+                            <div class="text-2xl sm:text-3xl font-bold text-blue-300">99.9%</div>
+                            <div class="text-white/80 text-sm sm:text-base">Uptime</div>
                         </div>
                     </div>
                     
-                    <div class="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
-                        <a href="#calculators" class="group bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center lg:items-start w-full sm:w-auto">
+                        <a href="#calculators" class="w-full sm:w-auto group bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm sm:text-base">
                             <i class="fas fa-rocket"></i>
                             Explore Calculators
                         </a>
@@ -75,31 +76,31 @@
                 </div>
                 
                 <!-- Right Side - Live Calculator -->
-                <div class="lg:w-1/2">
-                    <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 shadow-2xl">
-                        <div class="text-center mb-6">
-                            <h3 class="text-2xl font-bold text-white mb-2">Try Our Calculator</h3>
-                            <p class="text-white/70 flex items-center justify-center gap-2">
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-white/20 shadow-2xl">
+                        <div class="text-center mb-4 sm:mb-6">
+                            <h3 class="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">Try Our Calculator</h3>
+                            <p class="text-white/70 flex items-center justify-center gap-2 text-xs sm:text-sm">
                                 <i class="fas fa-keyboard text-yellow-300"></i>
                                 Type or click to calculate
                             </p>
                         </div>
                         
                         <!-- Calculator Display -->
-                        <div class="bg-black/30 rounded-2xl p-4 mb-6 border border-white/10 relative">
+                        <div class="bg-black/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 mb-4 sm:mb-6 border border-white/10 relative">
                             <div class="text-right">
-                                <div id="calc-expression" class="text-white/60 text-sm h-6 overflow-hidden">0</div>
-                                <div id="calc-result" class="text-white text-3xl font-bold h-10 overflow-hidden">0</div>
+                                <div id="calc-expression" class="text-white/60 text-xs sm:text-sm h-5 sm:h-6 overflow-hidden">0</div>
+                                <div id="calc-result" class="text-white text-2xl sm:text-3xl font-bold h-8 sm:h-10 overflow-hidden">0</div>
                             </div>
                             <!-- Keyboard Focus Indicator -->
                             <div id="keyboard-focus" class="absolute bottom-2 left-4 flex items-center gap-2 opacity-0 transition-opacity duration-300">
-                                <i class="fas fa-keyboard text-yellow-300 text-sm"></i>
-                                <span class="text-white/50 text-xs">Keyboard Active</span>
+                                <i class="fas fa-keyboard text-yellow-300 text-xs sm:text-sm"></i>
+                                <span class="text-white/50 text-xs hidden sm:inline">Keyboard Active</span>
                             </div>
                         </div>
                         
                         <!-- Calculator Keypad -->
-                        <div class="grid grid-cols-4 gap-3">
+                        <div class="grid grid-cols-4 gap-2 sm:gap-3">
                             <!-- Row 1 -->
                             <button onclick="clearCalculator()" class="calc-btn bg-red-500/20 hover:bg-red-500/30 text-red-200" data-key="Escape">
                                 C
@@ -169,38 +170,36 @@
                         </div>
                         
                         <!-- Quick Calculation Examples -->
-                        <div class="mt-6 pt-6 border-t border-white/10">
-                            <h4 class="text-white/80 text-sm font-semibold mb-3">Quick Calculations:</h4>
-                            <div class="grid grid-cols-2 gap-2">
-                                <button onclick="setQuickCalculation('15% of 200')" class="quick-calc-btn">
+                        <div class="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/10">
+                            <h4 class="text-white/80 text-xs sm:text-sm font-semibold mb-2 sm:mb-3">Quick Calculations:</h4>
+                            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+                                <button onclick="setQuickCalculation('15% of 200')" class="quick-calc-btn text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2">
                                     15% of 200
                                 </button>
-                                <button onclick="setQuickCalculation('(25*4)+50')" class="quick-calc-btn">
+                                <button onclick="setQuickCalculation('(25*4)+50')" class="quick-calc-btn text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2">
                                     25×4+50
                                 </button>
-                                <button onclick="setQuickCalculation('1000/8')" class="quick-calc-btn">
+                                <button onclick="setQuickCalculation('1000/8')" class="quick-calc-btn text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2">
                                     1000÷8
                                 </button>
-                                <button onclick="setQuickCalculation('12.5*8')" class="quick-calc-btn">
+                                <button onclick="setQuickCalculation('12.5*8')" class="quick-calc-btn text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2">
                                     12.5×8
                                 </button>
                             </div>
                         </div>
 
                         <!-- Keyboard Shortcuts Help -->
-                        <div class="mt-4 pt-4 border-t border-white/10">
-                            <details class="text-white/60 text-sm">
+                        <div class="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-white/10">
+                            <details class="text-white/60 text-xs sm:text-sm">
                                 <summary class="cursor-pointer hover:text-white/80 transition-colors">
                                     <i class="fas fa-info-circle mr-1"></i>
                                     Keyboard Shortcuts
                                 </summary>
-                                <div class="mt-2 grid grid-cols-2 gap-2 text-xs">
+                                <div class="mt-2 grid grid-cols-2 gap-1 sm:gap-2 text-xs">
                                     <div><kbd class="bg-white/10 px-1 rounded">0-9</kbd> Numbers</div>
-                                    <div><kbd class="bg-white/10 px-1 rounded">+ - * /</kbd> Operations</div>
-                                    <div><kbd class="bg-white/10 px-1 rounded">Enter</kbd> Calculate</div>
+                                    <div><kbd class="bg-white/10 px-1 rounded">+ - * /</kbd> Ops</div>
+                                    <div><kbd class="bg-white/10 px-1 rounded">Enter</kbd> Calc</div>
                                     <div><kbd class="bg-white/10 px-1 rounded">Esc</kbd> Clear</div>
-                                    <div><kbd class="bg-white/10 px-1 rounded">Backspace</kbd> Delete</div>
-                                    <div><kbd class="bg-white/10 px-1 rounded">%</kbd> Percentage</div>
                                 </div>
                             </details>
                         </div>
@@ -209,7 +208,7 @@
             </div>
             
             <!-- Scroll Indicator -->
-            <div class="text-center mt-12 animate-bounce">
+            <div class="text-center mt-8 sm:mt-12 animate-bounce">
                 <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center mx-auto">
                     <div class="w-1 h-3 bg-white/70 rounded-full mt-2"></div>
                 </div>

@@ -1,14 +1,15 @@
-<footer class="bg-gray-900 text-white">
+<footer class="bg-gray-900 text-white w-full">
     <!-- Main Footer Content -->
-    <div class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+    <div class="w-full px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
             <!-- Brand Column -->
             <div class="lg:col-span-1">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-10 h-10 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center">
+                    <div class="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 bg-linear-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shrink-0">
                         <i class="fas fa-calculator text-white text-lg"></i>
                     </div>
-                    <span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                    <span class="text-lg sm:text-xl font-bold bg-linear-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
                         CalculaterTools
                     </span>
                 </div>
@@ -153,42 +154,30 @@
 
     <!-- Bottom Bar -->
     <div class="border-t border-gray-700">
-        <div class="container mx-auto px-4 py-6">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="w-full px-3 sm:px-4 md:px-6 lg:px-8 py-6 md:py-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 sm:space-y-0">
                 <!-- Copyright -->
-                <div class="text-gray-400 text-sm">
+                <div class="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
                     &copy; {{ date('Y') }} CalculaterTools. All rights reserved.
                 </div>
 
-                <!-- Additional Links -->
-                {{-- <div class="flex flex-wrap justify-center space-x-6 text-sm">
-                    <a href="{{ route('sitemap') }}" class="text-gray-400 hover:text-white transition duration-200">
-                        Sitemap
-                    </a>
-                    <a href="{{ route('api.docs') }}" class="text-gray-400 hover:text-white transition duration-200">
-                        API Documentation
-                    </a>
-                    <a href="{{ route('help') }}" class="text-gray-400 hover:text-white transition duration-200">
-                        Help Center
-                    </a>
-                </div> --}}
-
                 <!-- Trust Badges -->
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-2 text-green-400">
-                        <i class="fas fa-shield-check text-sm"></i>
-                        <span class="text-xs font-medium">SSL Secured</span>
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
+                    <div class="flex items-center space-x-1 sm:space-x-2 text-green-400 text-xs sm:text-sm">
+                        <i class="fas fa-shield-check text-xs sm:text-sm"></i>
+                        <span class="font-medium hidden sm:inline">SSL Secured</span>
                     </div>
-                    <div class="flex items-center space-x-2 text-blue-400">
-                        <i class="fas fa-bolt text-sm"></i>
-                        <span class="text-xs font-medium">Fast Tools</span>
+                    <div class="flex items-center space-x-1 sm:space-x-2 text-blue-400 text-xs sm:text-sm">
+                        <i class="fas fa-bolt text-xs sm:text-sm"></i>
+                        <span class="font-medium hidden sm:inline">Fast Tools</span>
                     </div>
                 </div>
             </div>
 
             <!-- Disclaimer -->
-            <div class="text-center mt-4 pt-4 border-t border-gray-700">
-                <p class="text-gray-500 text-xs max-w-4xl mx-auto">
+            <div class="text-center mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-700">
+                <p class="text-gray-500 text-xs sm:text-xs max-w-4xl mx-auto px-2 sm:px-0 leading-relaxed">
                     CalculaterTools provides calculation tools for informational and educational purposes only. 
                     Results should be verified with professional sources when used for critical decisions. 
                     We are not responsible for any errors or omissions.
