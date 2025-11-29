@@ -88,18 +88,18 @@
                 </button>
 
                 <!-- Forgot Password Link -->
-                @if (Route::has('password.request'))
+                {{-- @if (Route::has('password.request'))
                     <div class="text-center">
                         <a href="{{ route('password.request') }}" class="text-sm text-blue-600 hover:text-blue-700 font-medium transition-colors">
                             <i class="fas fa-question-circle mr-1"></i>Forgot your password?
                         </a>
                     </div>
-                @endif
+                @endif --}}
             </form>
         </div>
 
         <!-- Sign Up Link -->
-        <div class="text-center">
+        {{-- <div class="text-center">
             <p class="text-sm text-gray-600">
                 Don't have an account? 
                 @if (Route::has('register'))
@@ -108,7 +108,7 @@
                     </a>
                 @endif
             </p>
-        </div>
+        </div> --}}
 
         <!-- Footer Info -->
         <div class="text-center text-xs text-gray-500 mt-8">

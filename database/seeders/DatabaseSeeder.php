@@ -19,21 +19,21 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Admin User',
             'email' => 'admin@example.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('yogesh@password@123'),
             'is_admin' => true,
         ]);
 
         User::factory()->create([
             'name' => 'Regular User',
             'email' => 'user@example.com',
-            'password' => bcrypt('password'),
+            'password' => bcrypt('yogesh@password@123'),
             'is_admin' => false,
         ]);
-        
+
         // Call other seeders
-        $this->call([
-            CategoriesTableSeeder::class,
-            PostsTableSeeder::class,
-        ]);
+        // $this->call([
+        //     CategoriesTableSeeder::class,
+        //     PostsTableSeeder::class,
+        // ]);
     }
 }
