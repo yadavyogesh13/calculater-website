@@ -373,4 +373,19 @@ class CalculatorController extends Controller
     {
         return view('pages.calculators.tech.image-compression');
     }
+
+    public function toolsList($toolname)
+    {
+        // Define valid categories
+        $validCategories = ['finance', 'health', 'others'];
+        
+        // If invalid category, redirect to finance as default
+        if (!in_array($toolname, $validCategories)) {
+            $toolname = 'finance';
+        }
+
+        return view('pages.all-tools', [
+            'activeCategory' => $toolname
+        ]);
+    }
 }

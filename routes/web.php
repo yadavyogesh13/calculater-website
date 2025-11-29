@@ -10,6 +10,10 @@ Route::get('/terms', [CalculatorController::class, 'terms'])->name('terms');
 Route::get('/contact', [CalculatorController::class, 'contact'])->name('contact');
 Route::post('/contact/submit', [CalculatorController::class, 'submit'])->name('contact.submit');
 
+
+// All Tools Lists
+Route::get('/alltools/{toolname}', [CalculatorController::class, 'toolsList'])->name('alltools');
+
 // Finance Calculators
 Route::get('/calculators/sip', [CalculatorController::class, 'sipCalculator'])->name('sip.calculator');
 Route::get('/calculators/emi', [CalculatorController::class, 'emiCalculator'])->name('emi.calculator');
