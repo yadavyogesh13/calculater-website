@@ -128,6 +128,12 @@
                             Terms of Service
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('blog') }}" class="text-gray-300 hover:text-white transition duration-200 text-sm flex items-center">
+                            <i class="fas fa-file-contract text-indigo-400 text-xs mr-2"></i>
+                            Blog
+                        </a>
+                    </li>
                 </ul>
 
                 <!-- Newsletter Signup -->
