@@ -28,6 +28,8 @@
                     Others
                 </a>
                 
+                <a href="{{ route('blog') }}" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Blog</a>
+
                 <a href="{{ route('contact') }}" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
                 <a href="{{ route('about') }}" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About Us</a>
             </div>

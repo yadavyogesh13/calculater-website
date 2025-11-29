@@ -1,8 +1,16 @@
 <?php
 
 use App\Http\Controllers\CalculatorController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
+// Public routes
 Route::get('/', [CalculatorController::class, 'home'])->name('home');
 Route::get('/about', [CalculatorController::class, 'about'])->name('about');
 Route::get('/privacy', [CalculatorController::class, 'privacy'])->name('privacy');
@@ -10,9 +18,43 @@ Route::get('/terms', [CalculatorController::class, 'terms'])->name('terms');
 Route::get('/contact', [CalculatorController::class, 'contact'])->name('contact');
 Route::post('/contact/submit', [CalculatorController::class, 'submit'])->name('contact.submit');
 
-
 // All Tools Lists
 Route::get('/alltools/{toolname}', [CalculatorController::class, 'toolsList'])->name('alltools');
+
+// Blogs
+Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+
+// Authentication Routes - Only call this once
+Auth::routes();
+
+// Custom logout if needed (optional)
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+// Admin routes
+Route::prefix('admin')->middleware(['auth', 'admin'])->group(function () {
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    
+    // Posts routes
+    Route::get('/posts', [PostController::class, 'index'])->name('admin.posts.index');
+    Route::get('/posts/create', [PostController::class, 'create'])->name('admin.posts.create');
+    Route::post('/posts', [PostController::class, 'store'])->name('admin.posts.store');
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('admin.posts.edit');
+    Route::put('/posts/{post}', [PostController::class, 'update'])->name('admin.posts.update');
+    Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('admin.posts.delete');
+
+    // Categories routes
+    Route::get('/categories', [CategoryController::class, 'index'])->name('admin.categories.index');
+    Route::get('/categories/create', [CategoryController::class, 'create'])->name('admin.categories.create');
+    Route::post('/categories', [CategoryController::class, 'store'])->name('admin.categories.store');
+    Route::get('/categories/{category}/edit', [CategoryController::class, 'edit'])->name('admin.categories.edit');
+    Route::put('/categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
+    Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.delete');
+
+});
+
+// Home route (after login)
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Finance Calculators
 Route::get('/calculators/sip', [CalculatorController::class, 'sipCalculator'])->name('sip.calculator');
